@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const Education = () => {
   return (
-  
-    <section id="education" className="py-16 bg-gray-100">
+    <motion.section
+      id="education"
+      className="py-16 bg-gray-100"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+    >
       <div className="container mx-auto px-6">
         <h3 className="text-2xl font-bold mb-6">Education</h3>
         <ul className="space-y-4">
@@ -18,9 +25,8 @@ const Education = () => {
           </li>
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
-
-export default Education
+export default Education;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // Hamburger icons
+import { FaBars, FaTimes } from "react-icons/fa"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,10 +7,10 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 text-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo / Name */}
+      
         <h1 className="text-xl font-bold">Areesha Aziz</h1>
 
-        {/* Desktop Links */}
+      
         <div className="hidden md:flex space-x-6">
           <a href="#about" className="hover:text-teal-400">About</a>
           <a href="#projects" className="hover:text-teal-400">Projects</a>
